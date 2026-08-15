@@ -22,6 +22,8 @@ def main():
         screen.fill("black")
         player.draw(screen)
         dt = clock.tick(60) / 1000
+        player.update(dt)
+        print(dt)
         pygame.display.flip()
 
 if __name__ == "__main__":
